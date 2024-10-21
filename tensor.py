@@ -23,8 +23,8 @@ class Conv2D:
         return h_out, w_out
     
     def element_wise(self, x, kernel):
-        # Apply the kernel to the input x element-wise
-        # We'll simplify this as a placeholder for now
+        # Apply the kernel to the input x element-wise.
+        # We'll simplify this as a placeholder for now.
         return sum(a * b for a_row, b_row in zip(x, kernel) for a, b in zip(a_row, b_row))
 
     def forward(self, input_matrix):
